@@ -4,16 +4,17 @@
 
 int main() {
 	
-	// Deðiþkenleri tanýmlýyoruz.
+	// Deï¿½iï¿½kenleri tanï¿½mlï¿½yoruz.
 	
 	double beklenenGetiri,risksizGetiri,standartSapma,sharpeOrani;
 	
-	// Kullanýcýdan verileri alýyoruz.
+	// Kullanï¿½cï¿½dan verileri alï¿½yoruz.
 	
 	printf("Beklenen getiriyi yuzde olarak girin: ");
+	printf("test: ");
 	scanf("%lf",&beklenenGetiri);
 	
-	printf("Risksiz getiri oranýný yuzde olarak girin: ");
+	printf("Risksiz getiri oranï¿½nï¿½ yuzde olarak girin: ");
 	scanf("%lf",&risksizGetiri);
 	
 	printf("Standart sapmayi yuzde olarak girin: ");
@@ -23,13 +24,13 @@ int main() {
 	
 	sharpeOrani = (beklenenGetiri-risksizGetiri)/standartSapma;
 	
-	//Sonucu yazdýrma iþlemi.
+	//Sonucu yazdï¿½rma iï¿½lemi.
 	printf("Sharpe orani: %2lf ",sharpeOrani);
 	
 	if(sharpeOrani<0){
-		printf("Sharpe orani negatif yatirim ölü");
+		printf("Sharpe orani negatif yatirim ï¿½lï¿½");
 	} else if(sharpeOrani<1){
-		printf("Sharpe orani düsük risk için yeterli getiri saglanmiyor.");
+		printf("Sharpe orani dï¿½sï¿½k risk iï¿½in yeterli getiri saglanmiyor.");
 	} else if(sharpeOrani<2){
 		printf("Sharpe orani iyi yatirim riskine karsilik makul bir getiri sagliyor.");
 	} else {
